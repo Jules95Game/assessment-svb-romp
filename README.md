@@ -14,3 +14,11 @@ Spring Dependencies:
   to reduce repetitive code
 
 ### 1. Make Tracer-bullet
+
+Goal:  
+"localhost:8080/api/v1/customers/all" should return list of 2 customers
+
+* Customer entity (id, name)
+* Customer repository
+* Customer seeder (2 customers)
+* Customer controller
