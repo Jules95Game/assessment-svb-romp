@@ -1,4 +1,4 @@
-package com.rompware.assessmentsvb.entities;
+package com.rompware.assessmentsvb.entities.customer;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
