@@ -12,3 +12,5 @@ Spring Dependencies:
   for an in-memory database
 * Lombok  
   to reduce repetitive code
+
+### 1. Make Tracer-bullet
