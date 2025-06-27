@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class Seeder implements CommandLineRunner {
+
   @Override
   public void run(String... args) throws Exception {
     seedCustomers();

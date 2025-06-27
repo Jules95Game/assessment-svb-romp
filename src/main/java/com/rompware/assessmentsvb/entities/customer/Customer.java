@@ -12,6 +12,7 @@ import lombok.Setter;
 @Getter
 @RequiredArgsConstructor
 public class Customer {
+
   @Id @GeneratedValue private UUID id;
 
   @Setter private String name;
