@@ -34,5 +34,6 @@ public class Seeder implements CommandLineRunner {
         List.of(
             new Car("Lexus", "IS220d", "Sport", 4, 5.4, 44285, 28488.66),
             new Car("Renault", "Master", "L2H1 T35 dCi 135 EU6 FWD", 2, 6.4, 48739.98, 30540));
+    carRepository.saveAll(carsToSeed);
   }
 }
