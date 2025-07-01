@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import java.util.UUID;
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
@@ -15,9 +16,5 @@ public class Customer {
 
   @Id @GeneratedValue private UUID id;
 
-  @Setter private String name;
-
-  public Customer(String name) {
-    this.name = name;
-  }
+  @Setter @NonNull private String name;
 }
