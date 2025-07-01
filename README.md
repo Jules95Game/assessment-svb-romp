@@ -16,7 +16,7 @@ Spring Dependencies:
 ### 1. Make Tracer-bullet
 
 Goal:  
-"localhost:8080/api/v1/customers/all" should return list of 2 customers
+"GET localhost:8080/api/v1/customers/all" should return list of 2 customers
 
 * Customer entity (id, name)
 * Customer repository
@@ -26,10 +26,33 @@ Goal:
 ### 2. Make full car entity
 
 Goal:  
-"localhost:8080/api/v1/cars/all" should return list of 2 cars with all properties
+"GET localhost:8080/api/v1/cars/all" should return list of 2 cars with all properties
 
 * Car entity  
   (id, make, model, version, doors, CO2 emission, gross price, net price)
 * Car repository
 * Car seeder (2 cars with all properties)
 * Car controller (1 endpoint: getAllCars)
+
+### 3. Add a car to the list
+
+Goal:  
+"POST localhost:8080/api/v1/cars/add"  
+with a request body in JSON like:
+
+{  
+"make": "Lexus",  
+"model": "IS220d",  
+"version": "Sport",  
+"numberOfDoors": 4,  
+"co2Emission": 5.4,  
+"grossPrice": 44285.0,  
+"nettPrice": 28488.66  
+}
+
+should add a car with those properties to the list
+
+* CarController PostMapping
+* Get @RequestBody as Car
+* Save Car to Repository
+* Return URL of the new car
