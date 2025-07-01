@@ -17,7 +17,7 @@ public class CarController {
     return carRepository.findAll();
   }
 
-  @PatchMapping("/add")
+  @PostMapping("/add")
   public ResponseEntity<Car> createCar(@RequestBody Car newCar) {
     Car savedCar = carRepository.save(newCar);
     return ResponseEntity.ok(savedCar);
