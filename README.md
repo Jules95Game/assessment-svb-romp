@@ -21,4 +21,15 @@ Goal:
 * Customer entity (id, name)
 * Customer repository
 * Customer seeder (2 customers)
-* Customer controller
+* Customer controller (1 endpoint: getAllCustomers)
+
+### 2. Make full car entity
+
+Goal:  
+"localhost:8080/api/v1/cars/all" should return list of 2 cars with all properties
+
+* Car entity  
+  (id, make, model, version, doors, CO2 emission, gross price, net price)
+* Car repository
+* Car seeder (2 cars with all properties)
+* Car controller (1 endpoint: getAllCars)
