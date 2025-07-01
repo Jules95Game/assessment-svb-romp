@@ -1,5 +1,6 @@
 # SVB Assessment Julian Romp
 
+Lease-a-car API  
 Java version: 21.0.7 (the latest LTS)  
 Spring Boot (with Maven) version: 3.5.3  
 Spring Dependencies:
@@ -12,6 +13,44 @@ Spring Dependencies:
   for an in-memory database
 * Lombok  
   to reduce repetitive code
+
+## Building and Testing
+
+#### Requirements:
+
+* OS: Windows 10/11
+* Java 21 SDK or runtime
+
+#### Running:
+
+After cloning the repository open a commandline in the root folder and run the command:  
+`./mvnw spring-boot:run`
+
+#### Testing:
+
+Use a program like Postman to send HTTP calls to the API endpoints.  
+Endpoints that currently work:
+
+`GET localhost:8080/api/v1/customers/all`  
+Gets list of all customers.
+
+`GET localhost:8080/api/v1/cars/all`  
+Gets list of all cars.
+
+`POST localhost:8080/api/v1/cars/add`  
+Adds a car to the database if you provide a request body with car properties in JSON  
+Example:  
+{  
+"make": "string",  
+"model": "string",  
+"version": "string",  
+"numberOfDoors": int,  
+"co2Emission": double,  
+"grossPrice": double,  
+"nettPrice": double  
+}
+
+## Plan of approach
 
 ### 1. Make Tracer-bullet
 
