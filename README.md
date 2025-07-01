@@ -23,7 +23,7 @@ Goal:
 * Customer seeder (2 customers)
 * Customer controller (1 endpoint: getAllCustomers)
 
-### 1. Make full car entity
+### 2. Make full car entity
 
 Goal:  
 "localhost:8080/api/v1/cars/all" should return list of 2 cars with all properties
